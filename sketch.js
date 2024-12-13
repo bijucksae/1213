@@ -1,3 +1,4 @@
+let cols, rows;
 let scl = 20;
 
 function setup() {
