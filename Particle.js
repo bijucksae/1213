@@ -14,4 +14,8 @@ class Particle {
     this.position.add(this.velocity);
     this.acceleration.mult(0);
   }  
+
+  applyForce(force) {
+    this.acceleration.add(force);
+  }  
 }
