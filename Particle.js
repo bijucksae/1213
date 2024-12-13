@@ -29,6 +29,7 @@ class Particle {
       let desired = force.copy();
       let angleOffset = radians(10);
       desired.rotate(angleOffset);
+      desired.setMag(this.maxspeed);
     }    
   }
 
