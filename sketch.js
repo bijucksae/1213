@@ -13,4 +13,8 @@ function draw() {
   background(20, 50);
 
   let time = millis() * 0.0001;
+  for (let y = 0; y < rows; y++) {
+    for (let x = 0; x < cols; x++) {
+    }
+  }  
 }
