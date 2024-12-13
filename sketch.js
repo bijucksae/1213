@@ -1,4 +1,5 @@
 let cols, rows;
+let flowField;
 let scl = 20;
 
 function setup() {
