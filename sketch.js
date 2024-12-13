@@ -11,4 +11,6 @@ function setup() {
 
 function draw() {
   background(20, 50);
+
+  let time = millis() * 0.0001;
 }
