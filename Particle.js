@@ -23,6 +23,7 @@ class Particle {
     let x = floor(this.position.x / scl);
     let y = floor(this.position.y / scl);
     let index = x + y * cols;
+    let force = flow[index];
   }
 
   edges() {
