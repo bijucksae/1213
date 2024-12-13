@@ -11,5 +11,6 @@ class Particle {
   update() {
     this.velocity.add(this.acceleration);
     this.velocity.limit(this.maxspeed);
+    this.position.add(this.velocity);
   }  
 }
