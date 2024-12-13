@@ -22,5 +22,6 @@ class Particle {
   show() {
     stroke(200, 100, 255, 150);
     strokeWeight(2);
+    line(this.previousPosition.x, this.previousPosition.y, this.position.x, this.position.y);
   }
 }
