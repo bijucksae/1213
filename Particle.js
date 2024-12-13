@@ -19,7 +19,11 @@ class Particle {
     this.acceleration.add(force);
   }  
 
-  follow(flow) {}
+  follow(flow) {
+    let x = floor(this.position.x / scl);
+    let y = floor(this.position.y / scl);
+    let index = x + y * cols;
+  }
 
   edges() {
     if (this.position.x > width) this.position.x = 0;
