@@ -1,3 +1,5 @@
+let scl = 20;
+
 function setup() {
   createCanvas(600, 600);
 }
