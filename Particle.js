@@ -7,4 +7,8 @@ class Particle {
     this.maxforce = 0.1;
     this.previousPosition = this.position.copy();
   }  
+
+  update() {
+    this.velocity.add(this.acceleration);
+  }  
 }
