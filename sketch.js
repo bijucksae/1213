@@ -1,3 +1,4 @@
+let particles = [];
 let cols, rows;
 let flowField;
 let scl = 20;
