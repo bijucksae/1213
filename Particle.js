@@ -27,6 +27,8 @@ class Particle {
 
     if (force) {
       let desired = force.copy();
+      let angleOffset = radians(10);
+      desired.rotate(angleOffset);
     }    
   }
 
