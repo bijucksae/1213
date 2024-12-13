@@ -31,6 +31,7 @@ function draw() {
     particle.follow(flowField);
     particle.update();
     particle.edges();
+    particle.show();
   }  
 }
 
