@@ -18,4 +18,8 @@ class Particle {
   applyForce(force) {
     this.acceleration.add(force);
   }  
+
+  show() {
+    stroke(200, 100, 255, 150);
+  }
 }
