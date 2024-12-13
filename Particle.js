@@ -51,3 +51,5 @@ class Particle {
     this.previousPosition = this.position.copy();
   }
 }
+
+function mousePressed() {}
