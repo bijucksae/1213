@@ -21,5 +21,6 @@ class Particle {
 
   show() {
     stroke(200, 100, 255, 150);
+    strokeWeight(2);
   }
 }
