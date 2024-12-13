@@ -29,6 +29,7 @@ function draw() {
   
   for (let particle of particles) {
     particle.follow(flowField);
+    particle.update();
   }  
 }
 
