@@ -21,6 +21,7 @@ class Particle {
 
   edges() {
     if (this.position.x > width) this.position.x = 0;
+    if (this.position.x < 0) this.position.x = width;
   }
 
   show() {
