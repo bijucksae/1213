@@ -19,6 +19,10 @@ class Particle {
     this.acceleration.add(force);
   }  
 
+  edges() {
+    if (this.position.x > width) this.position.x = 0;
+  }
+
   show() {
     stroke(200, 100, 255, 150);
     strokeWeight(2);
