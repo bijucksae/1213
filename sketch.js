@@ -16,6 +16,7 @@ function draw() {
   for (let y = 0; y < rows; y++) {
     for (let x = 0; x < cols; x++) {
       let index = x + y * cols;
+      let angle = noise(x * 0.1, y * 0.1, millis() * 0.0001) * TWO_PI * 2;
     }
   }  
 }
