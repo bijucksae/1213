@@ -8,6 +8,10 @@ function setup() {
   cols = floor(width / scl);
   rows = floor(height / scl);
   flowField = new Array(cols * rows);
+
+  for (let i = 0; i < 500; i++) {
+    particles.push(new Particle());
+  }  
 }
 
 function draw() {
