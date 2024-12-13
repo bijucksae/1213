@@ -25,5 +25,9 @@ function draw() {
       let v = p5.Vector.fromAngle(angle);
       flowField[index] = v;
     }
+  }
+  
+  for (let particle of particles) {
   }  
 }
+
