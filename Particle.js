@@ -52,4 +52,7 @@ class Particle {
   }
 }
 
-function mousePressed() {}
+function mousePressed() {
+  for (let particle of particles) {
+  }  
+}
