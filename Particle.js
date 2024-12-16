@@ -29,7 +29,7 @@ class Particle {
       let desired = force.copy();
       let angleOffset = radians(10);
       desired.rotate(angleOffset);
-      desired.setMag(this.maxspeed * 0.2);
+      desired.setMag(this.maxspeed);
 
       let steer = p5.Vector.sub(desired, this.velocity);
       steer.limit(this.maxforce * 0.5);
