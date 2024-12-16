@@ -12,9 +12,9 @@ function setup() {
   rows = floor(height / scl);
   flowField = new Array(cols * rows);
 
-  for (let i = 0; i < 500; i++) {
+  for (let i = 0; i < maxParticles; i++) {
     particles.push(new Particle());
-  }  
+  } 
 }
 
 function draw() {
