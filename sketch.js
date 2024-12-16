@@ -15,6 +15,10 @@ function setup() {
   for (let i = 0; i < maxParticles; i++) {
     particles.push(new Particle());
   } 
+
+  for (let i = 0; i < 50; i++) {
+    independentParticles.push(new IndependentParticle());
+  }
 }
 
 function draw() {
