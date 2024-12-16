@@ -62,6 +62,10 @@ function mousePressed() {
   attracting = true;
 }
 
+function mouseReleased() {
+  attracting = false;
+}
+
   function keyPressed() {
     if (key === 'w' || key === 'W') {
       independentParticles.push(new IndependentParticle())
