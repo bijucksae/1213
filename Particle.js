@@ -69,6 +69,6 @@ function mousePressed() {
     let center = createVector(mouseX, mouseY);
     let force = p5.Vector.sub(center, particle.position);
     force.setMag(2);
-    particle.applyForce(mouseForce);
+    particle.applyForce(force);
   }  
 }
