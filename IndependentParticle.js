@@ -1,0 +1,1 @@
+class IndependentParticle extends Particle {}
