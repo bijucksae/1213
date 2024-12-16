@@ -43,5 +43,11 @@ function draw() {
       particle.applyForce(force);
     }  
   }
+
+  function keyPressed() {
+    if (key === 'w' || key === 'W') {
+      independentParticles.push(new IndependentParticle());
+    }
+  }  
 }
 
