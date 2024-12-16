@@ -27,6 +27,7 @@ class Particle {
 
     if (force) {
       let desired = force.copy();
+      let angleOffset = radians(10);
       desired.setMag(this.maxspeed * 0.2);
 
       let steer = p5.Vector.sub(desired, this.velocity);
