@@ -67,6 +67,7 @@ class Particle {
 function mousePressed() {
   for (let particle of particles) {
     let center = createVector(mouseX, mouseY);
+    let force = p5.Vector.sub(center, particle.position);
     mouseForce.setMag(2);
     particle.applyForce(mouseForce);
   }  
