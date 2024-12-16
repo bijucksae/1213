@@ -36,7 +36,6 @@ function draw() {
   }  
 
   for (let independent of independentParticles) {
-    independent.follow(flowField);
     independent.update();
     independent.edges();
     independent.show();
