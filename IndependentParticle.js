@@ -1,4 +1,8 @@
 class IndependentParticle extends Particle {
+  constructor() {
+    super();
+  }
+  
   show() {
     stroke(255, 100, 100, 150);
     strokeWeight(3);
