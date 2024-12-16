@@ -35,6 +35,8 @@ function draw() {
     particle.show();
   }  
 
+  for (let independent of independentParticles) {}
+
   function mousePressed() {
     for (let particle of particles) {
       let center = createVector(mouseX, mouseY);
