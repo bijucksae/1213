@@ -41,6 +41,7 @@ function draw() {
     independent.edges();
     independent.show();
   }
+}
 
   function mousePressed() {
     for (let particle of particles) {
@@ -55,6 +56,5 @@ function draw() {
     if (key === 'w' || key === 'W') {
       independentParticles.push(new IndependentParticle());
     }
-  }  
-}
+  } 
 
