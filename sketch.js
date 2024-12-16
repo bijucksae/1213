@@ -3,6 +3,7 @@ let independentParticles = [];
 let cols, rows;
 let flowField;
 let scl = 20;
+let attracting = false;
 
 function setup() {
   createCanvas(600, 600);
