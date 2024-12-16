@@ -30,7 +30,7 @@ class Particle {
       desired.setMag(this.maxspeed);
 
       let steer = p5.Vector.sub(desired, this.velocity);
-      steer.limit(this.maxforce);
+      steer.limit(this.maxforce * 0.5);
       this.applyForce(steer);
     }    
   }
