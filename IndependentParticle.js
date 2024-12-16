@@ -11,6 +11,11 @@ class IndependentParticle extends Particle {
     this.velocity.limit(this.maxspeed);
     this.position.add(this.velocity);
     this.acceleration.mult(0);
+
+    this.life -= 2;
+    if (this.life < 0) {
+      this.life = 0;
+    }
   }
 
   show() {
