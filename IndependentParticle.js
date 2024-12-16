@@ -19,7 +19,7 @@ class IndependentParticle extends Particle {
   }
 
   show() {
-    stroke(255, 100, 100, 150);
+    stroke(255, 100, 100, this.life);
     strokeWeight(7);
     point(this.position.x, this.position.y);
   }
