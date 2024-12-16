@@ -68,7 +68,8 @@ function mouseReleased() {
 
   function keyPressed() {
     if (key === 'w' || key === 'W') {
-      independentParticles.push(new IndependentParticle())
-    }
-  } 
-
+      if (independentParticles.length < maxParticles) {
+        independentParticles.push(new IndependentParticle());
+      }
+     } 
+  }
