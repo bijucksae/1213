@@ -35,7 +35,9 @@ function draw() {
     particle.show();
   }  
 
-  for (let independent of independentParticles) {}
+  for (let independent of independentParticles) {
+    independent.follow(flowField);
+  }
 
   function mousePressed() {
     for (let particle of particles) {
