@@ -4,6 +4,10 @@ class IndependentParticle extends Particle {
     this.velocity = createVector(random(-1, 1), random(-1, 1));
   }
 
+  update() {
+    this.velocity.add(this.acceleration);
+  }
+
   show() {
     stroke(255, 100, 100, 150);
     strokeWeight(3);
