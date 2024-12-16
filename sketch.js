@@ -3,7 +3,6 @@ let independentParticles = [];
 let cols, rows;
 let flowField;
 let scl = 20;
-let maxParticles = 500;
 let attracting = false;
 
 function setup() {
@@ -12,13 +11,9 @@ function setup() {
   rows = floor(height / scl);
   flowField = new Array(cols * rows);
 
-  for (let i = 0; i < maxParticles; i++) {
+  for (let i = 0; i < 500; i++) {
     particles.push(new Particle());
-  } 
-
-  for (let i = 0; i < 50; i++) {
-    independentParticles.push(new IndependentParticle());
-  }
+  }  
 }
 
 function draw() {
@@ -51,25 +46,24 @@ function draw() {
   }  
 
   for (let independent of independentParticles) {
-    particle.follow(flowField);
     independent.update();
     independent.edges();
     independent.show();
   }
 }
 
-function mousePressed() {
-  attracting = true;
-}
-
-function mouseReleased() {
-  attracting = false;
-}
+  function mousePressed() {
+    for (let particle of particles) {
+      let center = createVector(mouseX, mouseY);
+      let force = p5.Vector.sub(center, particle.position);
+      force.setMag(2, 5);
+      particle.applyForce(force);
+    }  
+  }
 
   function keyPressed() {
     if (key === 'w' || key === 'W') {
-      if (independentParticles.length < maxParticles) {
-        independentParticles.push(new IndependentParticle());
-      }
-     } 
-  }
+      independentParticles.push(new IndependentParticle())
+    }
+  } 
+
