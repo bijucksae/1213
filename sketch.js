@@ -1,4 +1,5 @@
 let particles = [];
+let independentParticles = [];
 let cols, rows;
 let flowField;
 let scl = 20;
