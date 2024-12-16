@@ -27,6 +27,15 @@ function draw() {
       let v = p5.Vector.fromAngle(angle);
       flowField[index] = v;
     }
+
+    if (attracting) {
+      let mousePos = createVector(mouseX, mouseY);
+      for (let i = 0; i < particles.length; i++) {
+        let force = p5.Vector.sub(mousePos, particles[i].position);
+        force.setMag(0.2);
+        particles[i].applyForce(force);
+      }
+    }
   }
   
   for (let particle of particles) {
