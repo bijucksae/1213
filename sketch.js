@@ -53,7 +53,7 @@ function draw() {
 
   function keyPressed() {
     if (key === 'w' || key === 'W') {
-      independentParticles.push(new IndependentParticle());
+      independentParticles.push(new IndependentParticle(random(width), random(height)))
     }
   } 
 
