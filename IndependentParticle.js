@@ -1,8 +1,9 @@
 class IndependentParticle extends Particle {
   constructor() {
     super();
+    this.velocity = createVector(random(-1, 1), random(-1, 1));
   }
-  
+
   show() {
     stroke(255, 100, 100, 150);
     strokeWeight(3);
