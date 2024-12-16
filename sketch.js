@@ -39,6 +39,7 @@ function draw() {
     independent.follow(flowField);
     independent.update();
     independent.edges();
+    independent.show();
   }
 
   function mousePressed() {
