@@ -46,6 +46,10 @@ class Particle {
       this.position.x = 0;
       this.velocity.x *= -1;
     }
+    if (this.position.y > height) {
+      this.position.y = height;
+      this.velocity.y *= -1;
+    }
   }
 
   show() {
