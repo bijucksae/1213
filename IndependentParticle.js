@@ -2,7 +2,7 @@ class IndependentParticle extends Particle {
   constructor() {
     super();
     this.position = createVector(random(width), random(height));
-    this.velocity = createVector(random(-1, 1), random(-1, 1));
+    this.velocity = createVector(random(-3, 3), random(-3, 3));
     this.life = 255;
   }
 
